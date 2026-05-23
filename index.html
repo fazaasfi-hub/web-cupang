@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art of neptune | Premium Betta Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <h1 class="loader-logo">Art of neptune</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- 2. NAVIGATION BAR (Logo bertindak sebagai tombol kembali ke atas/Home) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="back-to-home">
+                <i class="fa-solid fa-fish-fins gold-accent"></i> Art of neptune
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#varieties" class="nav-link">Betta Varieties</a>
+                <a href="#showcase" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay-glow"></div>
+        <div class="hero-content reveal-on-load">
+            <h2 class="hero-subtitle">THE ART OF AQUATIC LUXURY</h2>
+            <h1 class="hero-title">Art of neptune<br><span class="serif-italic">Premium Collection</span></h1>
+            <p class="hero-desc">Art of Neptune adalah toko ikan cupang yang menyediakan berbagai jenis cupang berkualitas dengan pilihan warna, bentuk sirip, dan karakter yang beragam. Kami mengutamakan kualitas, kesehatan, serta perawatan terbaik untuk setiap ikan yang tersedia. Dengan pelayanan yang baik dan pilihan cupang yang menarik, Art of Neptune hadir sebagai tempat yang tepat bagi pecinta ikan cupang, baik untuk koleksi maupun hobi.</p>
+            <a href="#varieties" class="btn-primary">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- 4. BETTA VARIETIES SECTION (Dengan Fitur Filter Modern) -->
+    <section id="varieties" class="varieties-section scroll-reveal">
+        <div class="section-header">
+            <span class="section-tag">CURATED ARCHIVE</span>
+            <h2 class="section-title">BETTA VARIETIES</h2>
+            <div class="title-divider"></div>
+        </div>
+
+        <!-- Tombol Filter Kategori -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua jenis</button>
+            <button class="filter-btn" data-filter="solid">Halfmoon</button>
+            <button class="filter-btn" data-filter="pattern">Giant Plakat</button>
+            <button class="filter-btn" data-filter="rare">Avatar</button>
+        </div>
+
+        <div class="varieties-grid" id="betta-grid">
+            <!-- Data di-render menggunakan JavaScript -->
+        </div>
+    </section>
+
+    <!-- 5. FEATURED SHOWCASE SECTION -->
+    <section id="showcase" class="showcase-section scroll-reveal">
+        <div class="showcase-container">
+            <div class="showcase-img-box">
+                <img src="Logo1.jpg" alt="Featured Avatar Betta" class="showcase-img">
+                <div class="showcase-img-overlay"></div>
+            </div>
+            <div class="showcase-content">
+                <span class="section-tag">MASTERPIECE SHOT</span>
+                <h2 class="showcase-title">The Avatar Sovereign</h2>
+                <p class="showcase-desc">Showcase Art of Neptun menampilkan koleksi ikan cupang pilihan dengan kualitas terbaik dan tampilan yang menarik. Setiap cupang dipilih secara teliti berdasarkan warna, bentuk sirip, serta kondisi kesehatannya. Melalui showcase ini, pengunjung dapat melihat berbagai jenis cupang yang tersedia dan mengenal karakteristik unik dari setiap ikan yang ditampilkan.</p>
+                <div class="showcase-details">
+                    <div class="detail-item"><strong>Lineage:</strong> Pure Blue Rim & Black Avatar</div>
+                    <div class="detail-item"><strong>Grade:</strong> Super Show Grade (AAA+)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. STATS SECTION -->
+    <section class="stats-section scroll-reveal">
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="200">0</h3>
+                <p class="stat-label">Premium Collections</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="24">0</h3>
+                <p class="stat-label">Rare Bloodlines</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="850">0</h3>
+                <p class="stat-label">Global Connoisseurs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. CONNECT WITH US SECTION -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="section-header">
+            <span class="section-tag">RESERVATION & INQUIRY</span>
+            <h2 class="section-title">CONNECT WITH US</h2>
+            <div class="title-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+            <a href="https://tiktok.com/@artofneptune" target="_blank" class="social-card">
+                <div class="social-icon-box"><i class="fab fa-tiktok"></i></div>
+                <h3 class="social-platform">TikTok</h3>
+                <p class="social-handle">@artofneptune</p>
+                <span class="social-action">Watch Live <i class="fas fa-arrow-right"></i></span>
+            </a>
+
+            <a href="https://wa.me/+62895622632860" target="_blank" class="social-card">
+                <div class="social-icon-box"><i class="fab fa-whatsapp"></i></div>
+                <h3 class="social-platform">WhatsApp</h3>
+                <p class="social-handle">+62 895-6226-32860</p>
+                <span class="social-action">Direct Order <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo"><i class="fa-solid fa-fish-fins"></i> Art of neptune</a>
+                <p class="footer-moto">Sculpting Living Art.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#varieties">Varieties</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Art Of Neptune. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
